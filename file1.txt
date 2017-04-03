@@ -1,0 +1,9 @@
+while(!file.eof()) {
+  getline(file, line3);
+  hashval_t h = hash(line1+line2+line3);
+  hashing[currentLine] = h;
+  out << currentLine << ": " << h << endl;
+  line1=line2;
+  line2=line3;
+  currentLine++;
+}
